@@ -1,0 +1,14 @@
+#intelliJ files
+.idea/
+*.iml
+.DS_Store
+
+#build files
+build/
+target/
+*.classpath
+*.class
+
+#log files
+logs/
+hs_err_pid*.log
