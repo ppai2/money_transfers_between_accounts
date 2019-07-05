@@ -42,8 +42,8 @@ public class TransactionServiceImpl implements TransactionService {
             accountMap.put(recipientAccount.getAccountID(), recipientAccount);
             logger.info("Amount {} transferred from sender {} to recipient {}",
                     amount, senderAccount.getAccountID(), recipientAccount.getAccountID());
-            logger.info("Sender account ID balance update : {}", senderAccount.getAccountID(), senderAccount.getBalance());
-            logger.info("Recipient account ID balance update : {}", recipientAccount.getAccountID(), recipientAccount.getBalance());
+            logger.info("Sender account ID {} balance update : {}", senderAccount.getAccountID(), senderAccount.getBalance());
+            logger.info("Recipient account ID {} balance update : {}", recipientAccount.getAccountID(), recipientAccount.getBalance());
         } else {
             logger.error("User account ID {} does not have sufficient balance", senderAccount.getAccountID());
         }

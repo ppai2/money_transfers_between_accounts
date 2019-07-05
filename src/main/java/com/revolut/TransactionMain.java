@@ -16,7 +16,7 @@ import static spark.Spark.post;
  */
 public class TransactionMain {
     public static void main(String[] args) {
-        
+
         final Logger logger = LoggerFactory.getLogger(TransactionMain.class);
 
         get("/hello", (req, res)->"Hello, world");
