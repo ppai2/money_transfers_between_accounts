@@ -4,6 +4,16 @@ spark java framework, jetty, google guice, google gson, REST APIs
 Description: A data model and backend implementation for money transfers between user accounts. 
 REST API implemementation using Java Spark framework and Google Guice dependency injection. 
 
+Due to time constraints and for convenience, I have used HashMap as a local data cache for couple of user accounts. But for scalable implementation and efficiency in data storage and retrieval, we can use the following in-memory datastores - 
+	
+	H2 database : https://www.h2database.com/html/main.html
+	
+	SQLite : https://www.sqlite.org/index.html
+	
+For implementing this model with these datastores, we might need to write a script which loads the data in the datastores before we run any transaction related tasks like delete, get all users etc. 
+	
+
+
 Add new user account : 
 
 Request URL :
@@ -21,6 +31,8 @@ Request Body :
 		"amount": 10.00
 	}
 
+
+
 Deposit money in the user account : 
 
 Request URL : 
@@ -36,7 +48,8 @@ Request Body :
 		"amount": 10.00
 	}
 
-Make transaction : 
+
+Make transaction like sending money : 
 
 Request URL : 
 
@@ -51,12 +64,16 @@ Request Body :
 		"amount": 10.00
 	}
 
-Get all users : 
+
+
+Retrieve all users : 
 
 Request URL : 
 
 	GET http://localhost:4567/allUsers
 (This will retrieve all the user accounts from the cache)
+
+
 
 Delete a user account : 
 
