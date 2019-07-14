@@ -1,20 +1,18 @@
 package com.revolut.dao;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 /**
+ * Account class for account details
+ *
  * @author ppai
  */
 public class Account {
-
-    Logger logger = LoggerFactory.getLogger(Account.class);
 
     private String accountID;
     private Double balance;
     private Double amount;
 
-    public Account(String accountID, String userName, Double amount) {
+    public Account(String accountID, Double balance, Double amount) {
+        this.balance = balance;
         this.accountID = accountID;
         this.amount = amount;
     }
@@ -43,18 +41,12 @@ public class Account {
         this.balance = balance;
     }
 
-    public boolean contains(Double amount) {
-        if (amount < balance)  {
-            return true;
-        }
-        return false;
-    }
-
     @Override
     public String toString() {
-        return new StringBuffer().append(
-                getAccountID() + "," +
-                        getAmount() + "," +
-                        getBalance()).toString();
+        return "Account{" +
+                "accountID='" + accountID + '\'' +
+                ", balance=" + balance +
+                ", amount=" + amount +
+                '}';
     }
 }

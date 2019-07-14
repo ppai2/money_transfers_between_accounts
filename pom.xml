@@ -46,5 +46,26 @@
             <artifactId>slf4j-jdk14</artifactId>
             <version>1.7.13</version>
         </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>16.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sparkjava</groupId>
+            <artifactId>spark-core</artifactId>
+            <version>2.7.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.despegar</groupId>
+            <artifactId>spark-test</artifactId>
+            <version>1.1.8</version>
+        </dependency>
     </dependencies>
 </project>
