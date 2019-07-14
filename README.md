@@ -10,7 +10,7 @@ Request URL :
 
 	POST http://localhost:4567/addAccount
 
-(This will insert user account #6 into the cache)
+(This following request body will insert user account #6 into the cache)
 
 Request Body :
 	
@@ -26,7 +26,7 @@ Deposit money in the user account :
 Request URL : 
 
 	PUT http://localhost:4567/depositMoney/1
-(This will deposit $10.00 into user account #1)
+(The following request body will deposit $10.00 into user account #1)
 
 Request Body :
 
@@ -41,7 +41,7 @@ Make transaction :
 Request URL : 
 
 	POST http://localhost:4567/transaction
-(This will transfer $10.00 from sender account #1 to recipient account #2)
+(This following request body will transfer $10.00 from sender account #1 to recipient account #2)
 
 Request Body : 
 
