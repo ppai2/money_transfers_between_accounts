@@ -6,15 +6,19 @@ import com.revolut.dao.Transaction;
 import java.util.List;
 
 /**
+ * Transaction service interface
+ *
  * @author ppai
  */
 public interface TransactionService {
 
-    void makeTransaction(Transaction transaction);
+    boolean makeTransaction(Transaction transaction);
 
-    void addUser(Account account);
+    boolean addUser(Account account);
 
-    Account getUser(String accountID);
+    boolean updateUserAccount(Account account);
 
     List<Account> getAllusers();
+
+    boolean deleteAccount(String accountID);
 }
